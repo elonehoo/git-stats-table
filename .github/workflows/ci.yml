@@ -25,6 +25,9 @@ jobs:
       
       - name: Install shelljs
         run: npm install -g shelljs
+      
+      - name: Install
+        run: npm install
 
       - name: npx git-stats-table
         run: npx git-stats-table
