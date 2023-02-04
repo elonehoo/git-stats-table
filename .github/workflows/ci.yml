@@ -1,0 +1,27 @@
+name: Git Stats
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  git-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+
+      - name: Install git-quick-stats
+        run: cd .. && git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
+
+      - name: Install git-stats-table
+        run: npm install -g git-stats-table
+
+      - name: npx git-stats-table
+        run: npx git-stats-table
