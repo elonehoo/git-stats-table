@@ -1,14 +1,14 @@
 {
-  "name": "demo",
-  "version": "1.0.0",
-  "description": "",
+  "name": "git-stats-table",
+  "version": "0.0.0",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "dev": "node demo.js"
+    "dev": "node index.js",
+    "publish":"pnpm -r publish --access public --no-git-checks"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
   "dependencies": {
     "shelljs": "^0.8.5"
   }
