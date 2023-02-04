@@ -21,7 +21,7 @@ jobs:
         run: cd .. && git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
 
       - name: Install git-stats-table
-        run: npm install -g git-stats-table
+        run: npm install -g git-stats-table shelljs
 
       - name: npx git-stats-table
         run: npx git-stats-table
