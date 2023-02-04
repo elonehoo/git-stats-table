@@ -18,7 +18,7 @@ jobs:
           node-version: latest
 
       - name: Install git-quick-stats
-        run: cd .. && git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
+        run: cd ../ && git clone https://github.com/arzzen/git-quick-stats.git && cd git-quick-stats && sudo make install
 
       - name: Install git-stats-table
         run: npm install -g git-stats-table
