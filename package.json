@@ -8,14 +8,17 @@
   ],
   "scripts": {
     "dev": "node index.js",
+    "build":"tsup index.js",
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
   "dependencies": {
     "shelljs": "^0.8.5"
+    
   },
   "devDependencies": {
-    "bumpp": "^8.2.1"
+    "bumpp": "^8.2.1",
+    "tsup": "^6.5.0"
   }
 }
